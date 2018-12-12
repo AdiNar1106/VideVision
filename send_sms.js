@@ -3,6 +3,6 @@ const accountSid = 'AC3c4c3ffcbedaa2357041399ba0a42c51';
       const client = require('twilio')(accountSid, authToken);
 
       client.messages
-      .create({from: '+19375193594', body: 'body', to: '+19784571217'})
+      .create({from: '+19375193594', body: 'body', to: ''})
       .then(message => console.log(message.sid))
       .done();
